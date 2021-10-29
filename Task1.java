@@ -28,7 +28,7 @@
 	**  - 引数として受け取った値の税込価格（消費税は8％とする）を計算して返す
 	**  - 税込価格は整数（小数点以下切り捨て）で返す
 	*/
-	static int calcTaxPayment( int num1 ){       
+	static int calcTaxPayment( int price ){       
 		
 		int tax = num1 * 1.08
 		return 
@@ -41,9 +41,13 @@
 	**  - 引数として受け取った値が5000円より大きい場合、1000円より大きく5000円以下の分について10％割引、5000円より大きい分について20％割引にする
 	**  - 値引き額は小数点以下切り捨てで計算する（キャストを使いましょう）
 	**  - 割引金額の上限は5000円とする
-	*			マジックナンバーは変数て定義する/
-	static int discount(  ){            
-		
-		
+ 	*/
+	static int discount( int price ){            
+		//仕様に書かれているマジックナンバー（リテラル）は定数で定義する
+		final int discountBorder1 = 1000;   //値引き発生値段1000円
+		final int discountBorder2 = 5000;   //値引き発生値段5000円
+		final double discountRate1 = 0.1;   //1000円以上5000円以下の割引率
+		final double discountRate2 = 0.2;   //5000円以上の割引率
+		final int discountPraiceMax = 5000; //割引金額の上限5000円
 	}
 }
