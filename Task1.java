@@ -56,7 +56,7 @@
 			priceDowntemp = (int)((pr - discountBorder1) * discountRate1);   //1000円より大きい分について10％割引にする
 		
 		}else if(pr > discountBorder2){
-			priceDowntemp = (int)(discountBorder2 - discountBorder1) * discountRate1
+			priceDowntemp = (int)(discountBorder2 - discountBorder1) * discountRate1 + discountBorder2
 		}
 	}
 }
