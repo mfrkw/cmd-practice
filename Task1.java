@@ -58,5 +58,9 @@
 		}else if(pr > discountBorder2){
 			priceDowntemp = (int)((discountBorder2 - discountBorder1) * discountRate1 + (pr - discountBorder2) * discountRate2);
 		}
+		
+		int priceDown = 0;
+		
+		
 	}
 }
