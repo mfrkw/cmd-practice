@@ -59,8 +59,12 @@
 			priceDowntemp = (int)((discountBorder2 - discountBorder1) * discountRate1 + (pr - discountBorder2) * discountRate2);
 		}
 		
-		int priceDown = 0;
+		int priceDown = 0; //最終的な値引き額
 		
+		if(discountPraiceMax < priceDowntemp ){
+			priceDown = priceDowntemp
+		}
 		
+		return pr = priceDown ;
 	}
 }
